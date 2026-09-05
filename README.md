@@ -44,10 +44,16 @@ Build from source (below), or check [Releases](https://github.com/Mitroshenkov87
 
 ## Build
 
+Needs Android SDK and JDK 17+.
+
+The Gradle wrapper scripts are in the repo, but `gradle/wrapper/gradle-wrapper.jar` is a binary and is **not** committed. If `./gradlew` fails with a missing-jar error, generate it once:
+
 ```bash
-# needs Android SDK + JDK 17+
+gradle wrapper --gradle-version 8.7
 ./gradlew assembleRelease
 ```
+
+Or copy `gradle-wrapper.jar` from another Android project that uses the same wrapper version as `gradle/wrapper/gradle-wrapper.properties`.
 
 Anyone may take this project, change it, and rebuild it for their own needs under the MIT License.
 
