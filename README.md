@@ -38,6 +38,10 @@ First launch seeds slot 1 with a demo event (overwritable): «Илон Маск 
 
 No accounts, no network, no ads. Data stays on device.
 
+## Release APK
+
+Signed release build: [`dist/FiveUntil-1.0.apk`](dist/FiveUntil-1.0.apk). Install on Android (allow unknown sources). Signed as Aleksandr Mitroshenkov.
+
 ## Build
 
 ```bash
@@ -45,10 +49,8 @@ No accounts, no network, no ads. Data stays on device.
 ./gradlew assembleRelease
 ```
 
-Unsigned release APK: `app/build/outputs/apk/release/app-release-unsigned.apk`.
-
-Sign with `apksigner` using your own keystore. Do not commit keys or passwords.
+Anyone may take this project, change it, and rebuild it for their own needs under the MIT License.
 
 ## License
 
-Personal / private project unless otherwise noted.
+[MIT](LICENSE) — Copyright (c) 2026 Aleksandr Mitroshenkov.
