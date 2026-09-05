@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Five Until</string>
+    <string name="tap_to_add">Нажмите, чтобы добавить</string>
+    <string name="happened">Свершилось</string>
+    <string name="dismiss">Убрать</string>
+    <string name="title_hint">Название события</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="clear">Очистить</string>
+    <string name="reminder">Напоминание</string>
+    <string name="reminder_none">Нет</string>
+    <string name="reminder_notification">Уведомление</string>
+    <string name="reminder_notification_sound">Уведомление со звуком</string>
+    <string name="reminder_melody">Мелодия один раз</string>
+    <string name="pick_date">Дата</string>
+    <string name="pick_time">Время</string>
+    <string name="edit_title">Изменить название</string>
+    <string name="edit_when">Изменить дату и время</string>
+    <string name="notification_channel_name">Напоминания о событиях</string>
+    <string name="notification_channel_desc">Оповещения, когда обратный отсчёт достигает нуля</string>
+    <string name="year_one">%d год</string>
+    <string name="year_many">%d лет</string>
+    <string name="day_one">%d день</string>
+    <string name="day_many">%d дней</string>
+    <string name="hour_one">%d час</string>
+    <string name="hour_many">%d часов</string>
+    <string name="minute_one">%d минута</string>
+    <string name="minute_many">%d минут</string>
+    <string name="less_than_minute">меньше минуты</string>
+</resources>

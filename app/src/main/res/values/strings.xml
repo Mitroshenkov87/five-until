@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Five Until</string>
+    <string name="tap_to_add">Tap to add</string>
+    <string name="happened">Happened</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="title_hint">Event title</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_none">None</string>
+    <string name="reminder_notification">Notification</string>
+    <string name="reminder_notification_sound">Notification + sound</string>
+    <string name="reminder_melody">Play melody once</string>
+    <string name="pick_date">Date</string>
+    <string name="pick_time">Time</string>
+    <string name="edit_title">Edit title</string>
+    <string name="edit_when">Change date &amp; time</string>
+    <string name="notification_channel_name">Event reminders</string>
+    <string name="notification_channel_desc">Alerts when a countdown reaches zero</string>
+    <string name="year_one">%d year</string>
+    <string name="year_many">%d years</string>
+    <string name="day_one">%d day</string>
+    <string name="day_many">%d days</string>
+    <string name="hour_one">%d hour</string>
+    <string name="hour_many">%d hours</string>
+    <string name="minute_one">%d minute</string>
+    <string name="minute_many">%d minutes</string>
+    <string name="less_than_minute">less than a minute</string>
+</resources>

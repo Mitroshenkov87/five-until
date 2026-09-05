@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Five Until</string>
+    <string name="tap_to_add">Натисніть, щоб додати</string>
+    <string name="happened">Сталося</string>
+    <string name="dismiss">Прибрати</string>
+    <string name="title_hint">Назва події</string>
+    <string name="save">Зберегти</string>
+    <string name="cancel">Скасувати</string>
+    <string name="clear">Очистити</string>
+    <string name="reminder">Нагадування</string>
+    <string name="reminder_none">Немає</string>
+    <string name="reminder_notification">Сповіщення</string>
+    <string name="reminder_notification_sound">Сповіщення зі звуком</string>
+    <string name="reminder_melody">Мелодія один раз</string>
+    <string name="pick_date">Дата</string>
+    <string name="pick_time">Час</string>
+    <string name="edit_title">Змінити назву</string>
+    <string name="edit_when">Змінити дату і час</string>
+    <string name="notification_channel_name">Нагадування про події</string>
+    <string name="notification_channel_desc">Сповіщення, коли зворотний відлік досягає нуля</string>
+    <string name="year_one">%d рік</string>
+    <string name="year_many">%d років</string>
+    <string name="day_one">%d день</string>
+    <string name="day_many">%d днів</string>
+    <string name="hour_one">%d година</string>
+    <string name="hour_many">%d годин</string>
+    <string name="minute_one">%d хвилина</string>
+    <string name="minute_many">%d хвилин</string>
+    <string name="less_than_minute">менше хвилини</string>
+</resources>
