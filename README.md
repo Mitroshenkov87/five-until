@@ -38,9 +38,9 @@ First launch seeds slot 1 with a demo event (overwritable): «Илон Маск 
 
 No accounts, no network, no ads. Data stays on device.
 
-## Release APK
+## Install
 
-Signed release build: [`dist/FiveUntil-1.0.apk`](dist/FiveUntil-1.0.apk). Install on Android (allow unknown sources). Signed as Aleksandr Mitroshenkov.
+Build from source (below), or check [Releases](https://github.com/Mitroshenkov87/five-until/releases) if a packaged APK has been published. **APK binaries are not stored in this repository.**
 
 ## Build
 
