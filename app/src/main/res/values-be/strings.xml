@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Five Until</string>
+    <string name="tap_to_add">Націсніце, каб дадаць</string>
+    <string name="happened">Адбылося</string>
+    <string name="dismiss">Прыбраць</string>
+    <string name="title_hint">Назва падзеі</string>
+    <string name="save">Захаваць</string>
+    <string name="cancel">Адмена</string>
+    <string name="clear">Ачысціць</string>
+    <string name="reminder">Напамін</string>
+    <string name="reminder_none">Няма</string>
+    <string name="reminder_notification">Апавяшчэнне</string>
+    <string name="reminder_notification_sound">Апавяшчэнне са гукам</string>
+    <string name="reminder_melody">Мелодыя адзін раз</string>
+    <string name="pick_date">Дата</string>
+    <string name="pick_time">Час</string>
+    <string name="edit_title">Змяніць назву</string>
+    <string name="edit_when">Змяніць дату і час</string>
+    <string name="notification_channel_name">Напаміны пра падзеі</string>
+    <string name="notification_channel_desc">Апавяшчэнні, калі адлік дасягае нуля</string>
+    <string name="year_one">%d год</string>
+    <string name="year_many">%d гадоў</string>
+    <string name="day_one">%d дзень</string>
+    <string name="day_many">%d дзён</string>
+    <string name="hour_one">%d гадзіна</string>
+    <string name="hour_many">%d гадзін</string>
+    <string name="minute_one">%d хвіліна</string>
+    <string name="minute_many">%d хвілін</string>
+    <string name="less_than_minute">менш за хвіліну</string>
+</resources>
