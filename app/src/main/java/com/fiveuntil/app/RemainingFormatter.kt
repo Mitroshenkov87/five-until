@@ -5,6 +5,16 @@ import java.util.Calendar
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
+/**
+ * Human-readable remaining time for a countdown target.
+ *
+ * Locale: English uses Android string resources (one/many).
+ * Russian, Ukrainian, Belarusian use Slavic plural forms hardcoded here
+ * (1 / 2–4 / 5+ with teen exception 11–14). Other languages fall back to English forms.
+ *
+ * Scale: years+days → days(+hours if <7d) → hours+minutes → minutes → «less than a minute».
+ * Past targets return the localized «happened» string.
+ */
 object RemainingFormatter {
 
     fun format(context: Context, targetMillis: Long, nowMillis: Long = System.currentTimeMillis()): String {
