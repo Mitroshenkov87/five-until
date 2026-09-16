@@ -6,6 +6,17 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 
+/**
+ * Schedules exact (when permitted) RTC_WAKEUP alarms that fire [ReminderReceiver]
+ * at each event's [Event.atMillis].
+ *
+ * Skips: ReminderType.NONE, already-happened events, and past times.
+ * On SecurityException (exact-alarm denied on API 31+), falls back to
+ * setAndAllowWhileIdle. In-app due-state still works without alarms.
+ *
+ * PendingIntent requestCode = eventId.toInt(); cancel() clears all ReminderType
+ * variants for that id so a type change does not leave a stale alarm.
+ */
 object ReminderScheduler {
     fun rescheduleAll(context: Context, events: List<Event>) {
         for (e in events) {

@@ -5,6 +5,16 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.util.Calendar
 
+/**
+ * On-device persistence for the five slots.
+ *
+ * Storage: SharedPreferences (`five_until`) holding a JSON array under `events`
+ * and a monotonic `next_id`. No network, no accounts.
+ *
+ * First launch: if no events exist yet, seeds a demo countdown
+ * «Илон Маск 100 лет» at local midnight 28 June 2071 (user can edit/clear it).
+ * Flag `demo_done` ensures the demo is inserted only once.
+ */
 class EventStore(context: Context) {
     private val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
 
@@ -30,6 +40,7 @@ class EventStore(context: Context) {
         return list
     }
 
+    /** Persists at most [Event.MAX_SLOTS] events in list order (packed top-first). */
     fun save(events: List<Event>) {
         val arr = JSONArray()
         for (e in events.take(Event.MAX_SLOTS)) {
