@@ -9,7 +9,11 @@ import kotlin.math.sin
 
 /**
  * Plays a short monophonic melody once through AudioTrack, then stops.
- * Not an OS alarm — no looping, no persistent ringing.
+ * Used for ReminderType.MELODY. Not an OS alarm — no looping, no persistent ringing.
+ *
+ * Synthesis: six sine notes (C E G E A G) with a simple attack/release envelope,
+ * written into a static AudioTrack buffer on a background thread. [stop] releases
+ * the track; MainActivity also calls stop when marking an event due.
  */
 object MelodyPlayer {
     @Volatile private var track: AudioTrack? = null

@@ -10,6 +10,14 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
+/**
+ * Handles:
+ * - BOOT_COMPLETED: reload events and [ReminderScheduler.rescheduleAll]
+ * - ACTION_FIRE: deliver the chosen reminder (silent notif, sounding notif, or melody once)
+ *
+ * Does not mark the event as happened itself — that is done in-app by
+ * [MainActivity.processDueAndExpiry] when the UI ticks or resumes.
+ */
 class ReminderReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent?) {
         when (intent?.action) {
